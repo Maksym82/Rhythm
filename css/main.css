@@ -97,4 +97,9 @@ input {
   font-weight: 600;
   font-style: normal;
   font-display: swap;
+}
+[class*=__container] {
+  max-width: 1230px;
+  margin: 0 auto;
+  padding: 0 15px;
 }/*# sourceMappingURL=main.css.map */
