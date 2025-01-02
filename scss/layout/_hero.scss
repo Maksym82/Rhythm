@@ -1,0 +1,78 @@
+.hero {
+  padding-top: 70px;
+  padding-bottom: 30px;
+  margin: 0 auto;
+
+  @media (min-width: 768px) {
+    padding-top: 100px;
+    padding-bottom: 50px;
+  }
+
+  @media (min-width: 1440px) {
+    padding-top: 153px;
+    padding-bottom: 120px;
+  }
+}
+
+.hero__title {
+  font-family: $secondFamily;
+  font-weight: 600;
+  font-size: 45px;
+  max-width: 469px;
+  color: $colorPrimary;
+  margin-bottom: 16px;
+
+  @media (min-width: 768px) {
+    font-size: 56px;
+  }
+}
+
+.hero__title span {
+  color: $colorTitleOrange;
+}
+
+.hero__text {
+  font-weight: 500;
+  font-size: 16px;
+  color: #666;
+  max-width: 400px;
+  margin-bottom: 30px;
+  line-height: 1.2;
+}
+
+.button__box {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+
+  @media (min-width: 375px) {
+    gap: 40px;
+  }
+}
+
+.hero__button {
+  border-radius: 40px;
+  padding: 12px 42px;
+  background-color: $colorTitleOrange;
+  font-weight: 600;
+  font-size: 16px;
+  color: $colorWhite;
+
+  @media (min-width: 768px) {
+    padding: 18px 48px;
+  }
+}
+
+.hero__links {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+
+  @media (min-width: 375px) {
+    gap: 28px;
+  }
+}
+
+.icon__app {
+  fill: #b2b2b2;
+}
