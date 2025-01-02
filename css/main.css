@@ -299,7 +299,7 @@ input {
     padding-bottom: 50px;
   }
 }
-@media (min-width: 1440px) {
+@media (min-width: 1200px) {
   .hero {
     padding-top: 153px;
     padding-bottom: 120px;
@@ -310,13 +310,14 @@ input {
   font-family: "Cal Sans", sans-serif;
   font-weight: 600;
   font-size: 45px;
-  max-width: 469px;
+  max-width: 370px;
   color: #121212;
-  margin-bottom: 16px;
+  margin: 0 auto 16px;
 }
 @media (min-width: 768px) {
   .hero__title {
     font-size: 56px;
+    max-width: 469px;
   }
 }
 
@@ -328,9 +329,21 @@ input {
   font-weight: 500;
   font-size: 16px;
   color: #666;
-  max-width: 400px;
-  margin-bottom: 30px;
+  max-width: 370px;
   line-height: 1.2;
+  margin: 0 auto 30px;
+}
+@media (min-width: 768px) {
+  .hero__text {
+    max-width: 469px;
+    font-size: 18px;
+  }
+}
+@media (min-width: 1200px) {
+  .hero__text {
+    font-size: 16px;
+    min-width: 400px;
+  }
 }
 
 .button__box {
@@ -340,6 +353,9 @@ input {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   gap: 20px;
 }
 @media (min-width: 375px) {
@@ -379,4 +395,15 @@ input {
 
 .icon__app {
   fill: #b2b2b2;
+}
+
+.hero__image {
+  display: block;
+  margin: 30px auto 0;
+  max-width: 320px;
+}
+@media (min-width: 768px) {
+  .hero__image {
+    max-width: 600px;
+  }
 }/*# sourceMappingURL=main.css.map */
