@@ -1,0 +1,19 @@
+.section-title {
+  font-family: $secondFamily;
+  font-weight: 600;
+  font-size: 30px;
+  color: #121212;
+  text-align: center;
+
+  & span {
+    color: $colorTitleOrange;
+  }
+
+  @media (min-width: 768px) {
+    .section-title {
+      font-size: 44px;
+    }
+  }
+}
+
+

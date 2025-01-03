@@ -105,6 +105,22 @@ input {
   padding: 0 15px;
 }
 
+.section-title {
+  font-family: "Cal Sans", sans-serif;
+  font-weight: 600;
+  font-size: 30px;
+  color: #121212;
+  text-align: center;
+}
+.section-title span {
+  color: #ff6428;
+}
+@media (min-width: 768px) {
+  .section-title .section-title {
+    font-size: 44px;
+  }
+}
+
 .header {
   position: absolute;
   top: 0;
