@@ -1,18 +1,34 @@
 .hero {
   padding-top: 70px;
-  padding-bottom: 30px;
+  padding-bottom: 50px;
   margin: 0 auto;
+  // background-image: url('../../images/hero/hero-img.webp');
+  // background-repeat: no-repeat;
+  // background-position: 50% 100%;
+  // background-size: 320px;
 
   @media (min-width: 768px) {
-    padding-top: 100px;
+    padding-top: 150px;
     padding-bottom: 50px;
+    // background-position: 100% 80%;
+    // background-size: 475px;
   }
 
   @media (min-width: 1200px) {
-    padding-top: 153px;
+    padding-top: 235px;
     padding-bottom: 120px;
+    // background-size: 672px;
   }
 }
+
+@media (min-width: 768px) {
+  .hero__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
 
 .hero__title {
   font-family: $secondFamily;
@@ -23,8 +39,14 @@
   margin: 0 auto 16px;
 
   @media (min-width: 768px) {
+    max-width: 376px;
+    margin: 0 0 20px;
+  }
+
+  @media (min-width: 1200px) {
     font-size: 56px;
     max-width: 469px;
+    margin-bottom: 16px;
   }
 }
 
@@ -41,13 +63,16 @@
   margin: 0 auto 30px;
 
   @media (min-width: 768px) {
-    max-width: 469px;
+    max-width: 376px;
     font-size: 18px;
+    margin: 0 0 50px;
   }
 
   @media (min-width: 1200px) {
     font-size: 16px;
     min-width: 400px;
+    line-height: 1.4;
+    margin: 0 0 33px;
   }
 }
 
@@ -60,6 +85,10 @@
   @media (min-width: 375px) {
     gap: 40px;
   }
+
+  @media (min-width: 768px) {
+    justify-content: flex-start;
+  }
 }
 
 .hero__button {
@@ -69,6 +98,12 @@
   font-weight: 600;
   font-size: 16px;
   color: $colorWhite;
+  transition: background-color 0.3s linear;
+
+  &:hover,
+  &:focus {
+    background-color: #bb3500;
+  }
 
   @media (min-width: 768px) {
     padding: 18px 48px;
@@ -90,11 +125,11 @@
 }
 
 .hero__image {
-    display: block;
-    margin: 30px auto 0;
-    max-width: 320px;
+  display: block;
+  margin: 30px auto 0;
+  max-width: 320px;
 
-    @media (min-width: 768px) {
-        max-width: 600px;
-    }
+  @media (min-width: 768px) {
+    margin: 0;
+  }
 }

@@ -130,7 +130,7 @@ input {
     min-height: 100px;
   }
 }
-@media (min-width: 1440px) {
+@media (min-width: 1200px) {
   .header__container {
     min-height: 153px;
     -webkit-box-pack: start;
@@ -290,22 +290,35 @@ input {
 }
 .hero {
   padding-top: 70px;
-  padding-bottom: 30px;
+  padding-bottom: 50px;
   margin: 0 auto;
 }
 @media (min-width: 768px) {
   .hero {
-    padding-top: 100px;
+    padding-top: 150px;
     padding-bottom: 50px;
   }
 }
 @media (min-width: 1200px) {
   .hero {
-    padding-top: 153px;
+    padding-top: 235px;
     padding-bottom: 120px;
   }
 }
 
+@media (min-width: 768px) {
+  .hero__container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
 .hero__title {
   font-family: "Cal Sans", sans-serif;
   font-weight: 600;
@@ -316,8 +329,15 @@ input {
 }
 @media (min-width: 768px) {
   .hero__title {
+    max-width: 376px;
+    margin: 0 0 20px;
+  }
+}
+@media (min-width: 1200px) {
+  .hero__title {
     font-size: 56px;
     max-width: 469px;
+    margin-bottom: 16px;
   }
 }
 
@@ -335,14 +355,17 @@ input {
 }
 @media (min-width: 768px) {
   .hero__text {
-    max-width: 469px;
+    max-width: 376px;
     font-size: 18px;
+    margin: 0 0 50px;
   }
 }
 @media (min-width: 1200px) {
   .hero__text {
     font-size: 16px;
     min-width: 400px;
+    line-height: 1.4;
+    margin: 0 0 33px;
   }
 }
 
@@ -363,6 +386,13 @@ input {
     gap: 40px;
   }
 }
+@media (min-width: 768px) {
+  .button__box {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+}
 
 .hero__button {
   border-radius: 40px;
@@ -371,6 +401,11 @@ input {
   font-weight: 600;
   font-size: 16px;
   color: #fff;
+  -webkit-transition: background-color 0.3s linear;
+  transition: background-color 0.3s linear;
+}
+.hero__button:hover, .hero__button:focus {
+  background-color: #bb3500;
 }
 @media (min-width: 768px) {
   .hero__button {
@@ -404,6 +439,6 @@ input {
 }
 @media (min-width: 768px) {
   .hero__image {
-    max-width: 600px;
+    margin: 0;
   }
 }/*# sourceMappingURL=main.css.map */
