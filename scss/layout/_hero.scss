@@ -132,4 +132,14 @@
   @media (min-width: 768px) {
     margin: 0;
   }
+  @media (min-width: 868px) {
+    max-width: 420px;
+  }
+  @media (min-width: 968px) {
+    max-width: 520px;
+  }
+  @media (min-width: 1200px) {
+    max-width: 602px;
+    margin-top: -235px;
+  }
 }

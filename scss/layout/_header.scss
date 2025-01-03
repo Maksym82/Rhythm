@@ -57,6 +57,10 @@
     &:focus {
       color: rgba(18, 18, 18, 0.8);
     }
+
+    @media (min-width: 1200px) {
+      font-size: 16px;
+    }
   }
 
   .menu__link::after {
@@ -75,6 +79,12 @@
   .menu__link:focus::after {
     width: 100%;
     left: 0;
+  }
+}
+
+@media (min-width: 1200px) {
+  .menu__list {
+    gap: 56px;
   }
 }
 

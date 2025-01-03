@@ -180,6 +180,13 @@ input {
   .menu__link:hover, .menu__link:focus {
     color: rgba(18, 18, 18, 0.8);
   }
+}
+@media (min-width: 768px) and (min-width: 1200px) {
+  .menu__link {
+    font-size: 16px;
+  }
+}
+@media (min-width: 768px) {
   .menu__link::after {
     content: "";
     position: absolute;
@@ -196,6 +203,11 @@ input {
   .menu__link:focus::after {
     width: 100%;
     left: 0;
+  }
+}
+@media (min-width: 1200px) {
+  .menu__list {
+    gap: 56px;
   }
 }
 .icon-menu {
@@ -440,5 +452,21 @@ input {
 @media (min-width: 768px) {
   .hero__image {
     margin: 0;
+  }
+}
+@media (min-width: 868px) {
+  .hero__image {
+    max-width: 420px;
+  }
+}
+@media (min-width: 968px) {
+  .hero__image {
+    max-width: 520px;
+  }
+}
+@media (min-width: 1200px) {
+  .hero__image {
+    max-width: 602px;
+    margin-top: -235px;
   }
 }/*# sourceMappingURL=main.css.map */
