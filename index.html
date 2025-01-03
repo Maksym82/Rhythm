@@ -6,6 +6,11 @@
     <title>Rhythm</title>
     <!--Favicon-->
     <link rel="shortcut icon" href="./images/favicon.svg" />
+    <!--Swiper-->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
     <!--Styles-->
     <link rel="stylesheet" href="./css/main.min.css" />
   </head>
@@ -86,8 +91,35 @@
           </div>
         </div>
       </section>
+      <!--Store-->
+      <section class="store">
+        <div class="store__container">
+          <h2 class="section-title store__title">Check out the <span>Store</span></h2>
+
+          <!-- Slider main container -->
+          <div class="slider-store swiper">
+            <!-- Additional required wrapper -->
+            <div class="store__swiper-wrapper swiper-wrapper">
+              <!--Slide #1-->
+              <div class="swiper-slide store__swiper-slide">
+                <h3 class="store__card-title">NEW ON THE BOARD</h3>
+              </div>
+              <!--Slide #2-->
+              <div class="swiper-slide">Slide 2</div>
+              <div class="swiper-slide">Slide 3</div>
+              ...
+            </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+
+            <!-- If we need scrollbar -->
+            <div class="swiper-scrollbar"></div>
+          </div>
+        </div>
+      </section>
     </main>
 
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="./js/script.js" type="module"></script>
   </body>
 </html>
