@@ -463,7 +463,7 @@ input {
 .hero__image {
   display: block;
   margin: 30px auto 0;
-  max-width: 320px;
+  max-width: 290px;
 }
 @media (min-width: 768px) {
   .hero__image {
@@ -485,4 +485,40 @@ input {
     max-width: 602px;
     margin-top: -235px;
   }
+}
+
+.store {
+  padding-bottom: 50px;
+  margin: 0 auto;
+}
+
+.store__title {
+  margin-bottom: 36px;
+}
+
+.store__swiper-slide {
+  width: 290px;
+  margin: 0 auto;
+}
+
+.store__card-title {
+  font-weight: 600;
+  font-size: 20px;
+  letter-spacing: 0.08em;
+  margin-bottom: 24px;
+}
+
+.store__img {
+  margin-bottom: 40px;
+}
+
+.store__card-name {
+  font-weight: 500;
+  font-size: 16px;
+  margin-bottom: 7px;
+}
+
+.store__card-price {
+  font-size: 14px;
+  color: #666;
 }/*# sourceMappingURL=main.css.map */

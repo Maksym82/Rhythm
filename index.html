@@ -94,7 +94,9 @@
       <!--Store-->
       <section class="store">
         <div class="store__container">
-          <h2 class="section-title store__title">Check out the <span>Store</span></h2>
+          <h2 class="section-title store__title">
+            Check out the <span>Store</span>
+          </h2>
 
           <!-- Slider main container -->
           <div class="slider-store swiper">
@@ -103,14 +105,23 @@
               <!--Slide #1-->
               <div class="swiper-slide store__swiper-slide">
                 <h3 class="store__card-title">NEW ON THE BOARD</h3>
+                <img class="store__img" srcset="
+                ./images/store/store-1-mob-290.webp 290w,
+                ./images/store/store-1-mob-580.webp 580w,
+                ./images/store/store-1-tablet-364.webp 364w,
+                ./images/store/store-1-tablet-728.webp 728w,
+                " 
+                sizes="(min-width: 768px) 364px, (min-width: 320px) 290px"
+                alt="Red guitar"
+                src="./images/store/store-1-mobile.jpg"
+                >
+                <h3 class="store__card-name">The Essential Les Paul</h3>
+                <p class="store__card-price">$1,299.00</p>
               </div>
               <!--Slide #2-->
-              <div class="swiper-slide">Slide 2</div>
-              <div class="swiper-slide">Slide 3</div>
-              ...
+              <!-- <div class="swiper-slide">Slide 2</div>
+              <div class="swiper-slide">Slide 3</div> -->
             </div>
-            <!-- If we need pagination -->
-            <div class="swiper-pagination"></div>
 
             <!-- If we need scrollbar -->
             <div class="swiper-scrollbar"></div>
