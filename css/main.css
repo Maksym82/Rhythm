@@ -501,6 +501,11 @@ input {
   height: 260px;
   margin: 0 auto;
 }
+@media (min-width: 768px) {
+  .store__swiper-slide {
+    height: 305px;
+  }
+}
 
 .store__card-title {
   font-weight: 600;
