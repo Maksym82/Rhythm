@@ -5,6 +5,13 @@
 
 .store__title {
   margin-bottom: 36px;
+
+  @media (min-width: 768px) {
+    margin-bottom: 50px;
+  }
+  @media (min-width: 1200px) {
+    margin-bottom: 86px;
+  }
 }
 
 .store__swiper-slide {

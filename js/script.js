@@ -29,7 +29,7 @@ const swiper = new Swiper(".slider-store", {
 
   breakpoints: {
     // when window width is >= 530px
-    530: {
+    590: {
       slidesPerView: 2,
       spaceBetween: 10,
     },

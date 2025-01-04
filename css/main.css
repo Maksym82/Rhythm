@@ -116,7 +116,7 @@ input {
   color: #ff6428;
 }
 @media (min-width: 768px) {
-  .section-title .section-title {
+  .section-title {
     font-size: 44px;
   }
 }
@@ -494,6 +494,16 @@ input {
 
 .store__title {
   margin-bottom: 36px;
+}
+@media (min-width: 768px) {
+  .store__title {
+    margin-bottom: 50px;
+  }
+}
+@media (min-width: 1200px) {
+  .store__title {
+    margin-bottom: 86px;
+  }
 }
 
 .store__swiper-slide {
