@@ -506,6 +506,10 @@ input {
   }
 }
 
+.slider-store:not(:last-child) {
+  margin-bottom: 50px;
+}
+
 .store__swiper-slide {
   width: 290px;
   height: 260px;
@@ -521,6 +525,7 @@ input {
   font-weight: 600;
   font-size: 20px;
   letter-spacing: 0.08em;
+  text-transform: uppercase;
   margin-bottom: 24px;
 }
 
