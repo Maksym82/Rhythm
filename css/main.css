@@ -549,16 +549,20 @@ input {
   margin: 0 auto;
 }
 
+.category__swiper-slide {
+  height: 320px;
+}
+
 .category__img {
+  position: relative;
   display: block;
   margin: 0 auto;
   border-radius: 20px;
-  position: relative;
 }
 
 .category__img::before {
-  content: "";
   position: absolute;
+  content: "";
   width: 100%;
   height: 100%;
   top: 0;
@@ -572,7 +576,7 @@ input {
 .category__name {
   position: absolute;
   width: 100%;
-  bottom: 36px;
+  bottom: 76px;
   font-weight: 600;
   font-size: 20px;
   text-align: center;

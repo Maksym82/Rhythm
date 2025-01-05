@@ -23,13 +23,13 @@ const swiper = new Swiper(".slider-category", {
     },
     // when window width is >= 768px
     768: {
-      slidesPerView: 2,
-      spaceBetween: 40,
-    },
-    // when window width is >= 1280px
-    1280: {
       slidesPerView: 3,
       spaceBetween: 20,
+    },
+    // when window width is >= 1280px
+    1200: {
+      slidesPerView: 4,
+      spaceBetween: 10,
     },
   },
 
