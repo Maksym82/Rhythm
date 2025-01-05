@@ -12,7 +12,7 @@ function documentClick(e) {
   }
 }
 
-// Swiper section Advantages
+// Swiper section Store
 const swiper = new Swiper(".slider-store", {
   // Optional parameters
   direction: "horizontal",
@@ -50,3 +50,5 @@ const swiper = new Swiper(".slider-store", {
     draggable: true,
   }
 });
+
+
