@@ -10,10 +10,10 @@ const swiper = new Swiper(".slider-category", {
   spaceBetween: 10,
 
   // If we need pagination
-  pagination: {
-    el: ".swiper-pagination",
-    clickable: true,
-  },
+  // pagination: {
+  //   el: ".swiper-pagination",
+  //   clickable: true,
+  // },
 
   breakpoints: {
     // when window width is >= 530px

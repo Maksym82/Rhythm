@@ -22,10 +22,10 @@ const swiper = new Swiper(".slider-store", {
   spaceBetween: 10,
 
   // If we need pagination
-  pagination: {
-    el: ".swiper-pagination",
-    clickable: true,
-  },
+  // pagination: {
+  //   el: ".swiper-pagination",
+  //   clickable: true,
+  // },
 
   breakpoints: {
     // when window width is >= 530px
@@ -36,11 +36,11 @@ const swiper = new Swiper(".slider-store", {
     // when window width is >= 768px
     768: {
       slidesPerView: 2,
-      spaceBetween: 40,
+      spaceBetween: 10,
     },
     // when window width is >= 1280px
-    1280: {
-      slidesPerView: 3,
+    1200: {
+      slidesPerView: 4,
       spaceBetween: 20,
     },
   },
