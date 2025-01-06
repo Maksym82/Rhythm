@@ -643,4 +643,8 @@ input {
             column-gap: 160px;
     row-gap: 80px;
   }
+}
+
+.brands__icon {
+  fill: #868686;
 }/*# sourceMappingURL=main.css.map */
