@@ -558,6 +558,7 @@ input {
   display: block;
   margin: 0 auto;
   border-radius: 20px;
+  cursor: pointer;
 }
 
 .category__img::before {
