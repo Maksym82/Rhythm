@@ -135,6 +135,10 @@ input {
   }
 }
 
+.white-title {
+  color: #fff;
+}
+
 .header {
   position: absolute;
   top: 0;
@@ -655,4 +659,11 @@ input {
 
 .brands__icon {
   fill: #868686;
+}
+
+.why {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  margin: 0 auto;
+  background-color: #121212;
 }/*# sourceMappingURL=main.css.map */
