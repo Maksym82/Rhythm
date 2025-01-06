@@ -40,7 +40,7 @@ const swiper = new Swiper(".slider-store", {
     },
     // when window width is >= 1280px
     1200: {
-      slidesPerView: 4,
+      slidesPerView: 3,
       spaceBetween: 20,
     },
   },
