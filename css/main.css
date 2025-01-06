@@ -559,6 +559,14 @@ input {
   margin: 0 auto;
   border-radius: 20px;
   cursor: pointer;
+  -webkit-transition: -webkit-transform 0.3s linear;
+  transition: -webkit-transform 0.3s linear;
+  transition: transform 0.3s linear;
+  transition: transform 0.3s linear, -webkit-transform 0.3s linear;
+}
+.category__img:hover {
+  -webkit-transform: scale(1.01);
+          transform: scale(1.01);
 }
 
 .category__img::before {
