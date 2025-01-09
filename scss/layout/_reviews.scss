@@ -75,3 +75,19 @@
     margin-left: 178px;
   }
 }
+
+.swiper-pagination {
+  position: relative;
+  margin-top: 21px;
+}
+
+.swiper-pagination-bullet {
+  border-radius: 20px;
+  width: 16px;
+  height: 16px;
+  display: inline-block;
+}
+
+.swiper-pagination-bullet-active {
+  background: $colorTitleOrange;
+}
