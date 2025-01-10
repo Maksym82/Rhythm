@@ -19,6 +19,10 @@
   }
 }
 
+.reviews__description {
+  position: relative;
+}
+
 .reviews__text {
   font-size: 24px;
   line-height: 140%;
@@ -68,6 +72,8 @@
   position: relative;
   z-index: 1;
   margin: 0 auto;
+  background-color: $colorPrimary;
+  border-radius: 50%;
 
   @media (min-width: 1200px) {
     width: 326px;
@@ -82,10 +88,10 @@
 }
 
 .swiper-pagination-bullet {
+  display: inline-block;
   border-radius: 20px;
   width: 16px;
   height: 16px;
-  display: inline-block;
 }
 
 .swiper-pagination-bullet-active {
