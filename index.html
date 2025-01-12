@@ -545,7 +545,6 @@
                   </div>
                 </div>
               </div>
-              
             </div>
             <!-- If we need pagination -->
             <div class="swiper-pagination"></div>
@@ -556,11 +555,51 @@
       <section class="buy">
         <div class="buy__container">
           <div class="buy__description">
-            <h2 class="section-title title">Browse and buy your <span>favorite guitars</span> with Rhythm.</h2>
+            <h2 class="section-title title">
+              Browse and buy your <span>favorite guitars</span> with Rhythm.
+            </h2>
             <div class="buy__load">
-              <img src="./images/buy/google.svg" alt="logo google play">
-              <img src="./images/buy/apple.svg" alt="logo apple store">
+              <img src="./images/buy/google.svg" alt="logo google play" />
+              <img src="./images/buy/apple.svg" alt="logo apple store" />
             </div>
+          </div>
+          <div class="buy__image-box">
+            <picture>
+              <source
+                srcset="
+                  ./images/buy/first-image-guitars-1x.webp 1x,
+                  ./images/buy/first-image-guitars-2x.webp 2x
+                "
+                media="(min-width: 320px)"
+              />
+              <img
+                srcset="
+                  ./images/buy/first-image-guitars-1x.jpg 1x,
+                  ./images/buy/first-image-guitars-2x.jpg 2x
+                "
+                src="./images/buy/first-guitarpng.png"
+                alt="guitars"
+                class="buy__img"
+              />
+            </picture>
+            <picture>
+              <source
+                srcset="
+                  ./images/buy/second-image-guitars-1x.webp 1x,
+                  ./images/buy/second-image-guitars-2x.webp 2x
+                "
+                media="(min-width: 320px)"
+              />
+              <img
+                srcset="
+                  ./images/buy/second-image-guitars-1x.jpg 1x,
+                  ./images/buy/second-image-guitars-2x.jpg 2x
+                "
+                src="./images/buy/second-guitarpng.png"
+                alt="guitars"
+                class="buy__img"
+              />
+            </picture>
           </div>
         </div>
       </section>
