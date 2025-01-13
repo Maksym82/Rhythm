@@ -857,6 +857,7 @@ input {
   padding-top: 50px;
   padding-bottom: 50px;
   margin: 0 auto;
+  background: wheat;
 }
 
 @media (min-width: 1000px) {
