@@ -958,4 +958,10 @@ input {
   border-radius: 25px;
   width: 212px;
   height: 461px;
+}
+
+.footer {
+  background-color: #eee;
+  padding-top: 50px;
+  padding-bottom: 50px;
 }/*# sourceMappingURL=main.css.map */
