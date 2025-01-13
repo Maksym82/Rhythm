@@ -964,4 +964,28 @@ input {
   background-color: #eee;
   padding-top: 50px;
   padding-bottom: 50px;
+}
+
+.footer__logo-box > .logo {
+  margin-bottom: 28px;
+}
+
+.address__item {
+  margin-bottom: 20px;
+}
+
+.address__item:last-child {
+  margin-bottom: 0;
+}
+
+.address__link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 20px;
+  color: #666;
+  fill: #666;
 }/*# sourceMappingURL=main.css.map */
