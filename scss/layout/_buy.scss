@@ -4,11 +4,13 @@
   margin: 0 auto;
 }
 
-.buy__content {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 36px;
+@media (min-width: 1000px) {
+  .buy__content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 36px;
+  }
 }
 
 .buy__description {
@@ -19,6 +21,12 @@
   max-width: 484px;
   margin: 0 auto;
   margin-bottom: 36px;
+
+  @media (min-width: 1000px) {
+    text-align: left;
+    margin-bottom: 60px;
+    line-height: 1.4;
+  }
 }
 
 .buy__load {
@@ -30,6 +38,10 @@
   @media (min-width: 460px) {
     flex-direction: row;
     justify-content: center;
+  }
+
+  @media (min-width: 1000px) {
+    justify-content: left;
   }
 }
 
@@ -43,6 +55,10 @@
     flex-direction: row;
     gap: 20px;
     justify-content: center;
+  }
+
+  @media (min-width: 100px) {
+    gap: 33px;
   }
 }
 
