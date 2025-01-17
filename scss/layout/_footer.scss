@@ -4,6 +4,10 @@
   padding-bottom: 50px;
 }
 
+.footer__content {
+  margin-bottom: 24px;
+}
+
 .footer__logo-box {
   max-width: 250px;
   margin: 0 auto 34px;
@@ -68,4 +72,11 @@
 
 .social__icon {
   fill: rgba(18, 18, 18, 0.6);
+}
+
+.footer__text {
+  font-size: 16px;
+  line-height: 160%;
+  color: rgba(18, 18, 18, 0.6);
+  text-align: center;
 }
