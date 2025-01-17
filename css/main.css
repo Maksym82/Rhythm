@@ -966,8 +966,18 @@ input {
   padding-bottom: 50px;
 }
 
+.footer__logo-box {
+  max-width: 250px;
+  margin: 0 auto 34px;
+}
+
 .footer__logo-box > .logo {
   margin-bottom: 28px;
+  width: 202px;
+}
+
+.footer__logo-box .logo__text {
+  font-size: 40px;
 }
 
 .address__item {
@@ -988,4 +998,51 @@ input {
   gap: 20px;
   color: #666;
   fill: #666;
+}
+
+.footer__pages {
+  margin-bottom: 24px;
+}
+
+.footer__pages-title {
+  font-weight: 600;
+  font-size: 18px;
+  text-transform: uppercase;
+  color: #121212;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.footer__pages-list {
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 16px;
+}
+
+.footer__pages-link {
+  font-size: 16px;
+  color: rgba(18, 18, 18, 0.6);
+}
+
+.social__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 32px;
+}
+
+.social__icon {
+  fill: rgba(18, 18, 18, 0.6);
 }/*# sourceMappingURL=main.css.map */
