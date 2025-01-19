@@ -8,9 +8,23 @@
   margin-bottom: 24px;
 }
 
+@media (min-width: 1200px) {
+  .footer__content {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+}
+
 .footer__logo-box {
   max-width: 250px;
   margin: 0 auto 34px;
+}
+
+@media (min-width: 1200px) {
+  .footer__logo-box {
+    margin: 0;
+  }
 }
 
 .footer__logo-box > .logo {
