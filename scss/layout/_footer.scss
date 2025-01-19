@@ -52,6 +52,13 @@
   fill: $colorText;
 }
 
+.address__link:hover,
+.address__link:focus {
+  text-decoration: underline;
+  color: rgb(18, 18, 18);
+  fill: rgb(18, 18, 18);
+}
+
 .footer__pages {
   margin-bottom: 24px;
 }
@@ -75,6 +82,12 @@
 .footer__pages-link {
   font-size: 16px;
   color: rgba(18, 18, 18, 0.6);
+}
+
+.footer__pages-link:hover,
+.footer__pages-link:focus {
+  text-decoration: underline;
+  color: rgb(18, 18, 18);
 }
 
 .social__list {
