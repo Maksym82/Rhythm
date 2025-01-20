@@ -1082,9 +1082,20 @@ input {
   fill: rgba(18, 18, 18, 0.6);
 }
 
+.social__icon:hover,
+.social__icon:focus {
+  fill: rgb(18, 18, 18);
+}
+
 .footer__text {
   font-size: 16px;
   line-height: 160%;
   color: rgba(18, 18, 18, 0.6);
   text-align: center;
+}
+
+.footer__text a:hover,
+.footer__text a:focus {
+  text-decoration: underline;
+  color: rgb(18, 18, 18);
 }/*# sourceMappingURL=main.css.map */
