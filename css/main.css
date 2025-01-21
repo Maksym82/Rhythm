@@ -929,6 +929,7 @@ input {
 }
 
 .buy__image-box {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -963,6 +964,10 @@ input {
   border-radius: 25px;
   width: 212px;
   height: 461px;
+}
+
+picture:nth-child(even) {
+  padding-top: 35px;
 }
 
 .footer {
