@@ -3,6 +3,12 @@
   margin: 0 auto;
 }
 
+@media (min-width: 768px) {
+  .brands {
+    padding-bottom: 100px;
+  }
+}
+
 .brands__list {
   display: flex;
   align-items: center;

@@ -3,6 +3,12 @@
   margin: 0 auto;
 }
 
+@media (min-width: 768px) {
+  .store {
+    padding-bottom: 100px;
+  }
+}
+
 .slider-store:not(:last-child) {
   margin-bottom: 50px;
 }

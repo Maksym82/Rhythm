@@ -5,6 +5,12 @@
   background: wheat;
 }
 
+@media (min-width: 768px) {
+  .buy {
+    padding-bottom: 100px;
+  }
+}
+
 @media (min-width: 1000px) {
   .buy__content {
     display: flex;
