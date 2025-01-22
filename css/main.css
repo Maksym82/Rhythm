@@ -1149,9 +1149,12 @@ picture:nth-child(even) {
   z-index: 5;
   opacity: 0.6;
 }
+@media (min-width: 768px) {
+  #scrollToTop {
+    left: 90%;
+  }
+}
 
 .scrollup {
   fill: #ff6428;
-  -webkit-transition: fill 0.3 linear;
-  transition: fill 0.3 linear;
 }/*# sourceMappingURL=main.css.map */
