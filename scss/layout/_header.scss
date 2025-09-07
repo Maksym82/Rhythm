@@ -155,6 +155,7 @@
     height: 137px;
     background: $colorGray;
     z-index: 2;
+    transition: left 0.3s linear;
   }
 
   .menu-open .menu__body,
