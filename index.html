@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -7,10 +7,7 @@
     <!--Favicon-->
     <link rel="shortcut icon" href="./images/favicon.svg" />
     <!--Swiper-->
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
-    />
+    <link rel="stylesheet" href="./libs/swiper-bundle.min.css">
     <!--Styles-->
     <link rel="stylesheet" href="./css/main.min.css" />
   </head>
@@ -86,6 +83,7 @@
                 class="hero__image"
                 src="./images/hero/hero-img.webp"
                 alt="Guitar"
+                fetchpriority="high"
               />
             </div>
           </div>
@@ -715,7 +713,8 @@
         <use href="./images/icons.svg#icon-circle-chevron-up-solid"></use>
       </svg>
     </div>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script src="./libs/swiper-bundle.min.js"></script>
     <script src="./js/script.js" type="module"></script>
     <script src="./js/category.js"></script>
     <script src="./js/reviews.js" type="module"></script>
