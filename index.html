@@ -7,7 +7,7 @@
     <!--Favicon-->
     <link rel="shortcut icon" href="./images/favicon.svg" />
     <!--Swiper-->
-    <link rel="stylesheet" href="./libs/swiper-bundle.min.css">
+    <link rel="stylesheet" href="./libs/swiper-bundle.min.css" />
     <!--Styles-->
     <link rel="stylesheet" href="./css/main.min.css" />
   </head>
@@ -36,7 +36,11 @@
             </ul>
           </div>
         </nav>
-        <button class="icon-menu" type="button">
+        <button
+          class="icon-menu"
+          type="button"
+          aria-label="Перемикач мобільного меню"
+        >
           <span></span>
         </button>
       </div>
@@ -60,6 +64,7 @@
                   class="app__link"
                   href="https://play.google.com/store/"
                   target="_blank"
+                  aria-label="Посилання на Google Play"
                 >
                   <svg class="icon__app" width="26" height="29">
                     <use href="./images/icons.svg#icon-google-play"></use>
@@ -69,6 +74,7 @@
                   class="app__link"
                   href="https://www.apple.com/app-store/"
                   target="_blank"
+                  aria-label="Посилання на Apple store"
                 >
                   <svg class="icon__app" width="26" height="32">
                     <use href="./images/icons.svg#icon-apple-store"></use>
@@ -306,78 +312,94 @@
             Featuring the <span>Best Brands</span>
           </h2>
           <ul class="brands__list">
+            <!-- Item #1 -->
             <li>
               <a
                 class="brands__link"
                 href="https://www.ibanez.com/eu/"
                 target="_blank"
+                aria-label="Посилання на сайт ibanez"
               >
                 <img src="./images/brands/ibanez.svg" alt="logo ibanez" />
               </a>
             </li>
+            <!-- Item #2 -->
             <li>
               <a
                 class="brands__link"
                 href="https://www.martinguitar.com/"
                 target="_blank"
+                aria-label="Посилання на сайт martinguitar"
               >
                 <img src="./images/brands/martin.svg" alt="logo martin" />
               </a>
             </li>
+            <!-- Item #3 -->
             <li>
               <a
                 class="brands__link"
                 href="https://www.fender.com/en/start"
                 target="_blank"
+                aria-label="Посилання на сайт fender"
               >
                 <img src="./images/brands/fender.svg" alt="logo fender" />
               </a>
             </li>
+            <!-- Item #4 -->
             <li>
               <a
                 class="brands__link"
                 href="https://www.gibson.com/en-US/"
                 target="_blank"
+                aria-label="Посилання на сайт gibson"
               >
                 <img src="./images/brands/gibson.svg" alt="logo gibson" />
               </a>
             </li>
+            <!-- Item #5 -->
             <li>
               <a
                 class="brands__link"
                 href="https://www.taylorguitars.com/"
                 target="_blank"
+                aria-label="Посилання на сайт taylorguitars"
               >
                 <img src="./images/brands/taylor.svg" alt="logo taylor" />
               </a>
             </li>
+            <!-- Item #6 -->
             <li>
               <a
                 class="brands__link"
                 href="https://www.gretschguitars.com/"
                 target="_blank"
+                aria-label="Посилання на сайт gretschguitars"
               >
                 <svg class="brands__icon" width="136" height="27">
                   <use href="./images/icons.svg#icon-gretsch"></use>
                 </svg>
               </a>
             </li>
+            <!-- Item #7 -->
             <li>
               <a
                 class="brands__link"
                 href="https://www.takamine.com/"
                 target="_blank"
+                aria-label="Посилання на сайт takamine"
               >
                 <svg class="brands__icon" width="152" height="57">
                   <use href="./images/icons.svg#icon-takamine"></use>
                 </svg>
               </a>
             </li>
+            <!-- Item #8 -->
             <li>
               <a
                 class="brands__link"
                 href="https://seagullguitars.com/"
                 target="_blank"
+                aria-label="Посилання на сайт seagullguitars"
               >
                 <svg class="brands__icon" width="100" height="59">
                   <use href="./images/icons.svg#icon-seagull"></use>
@@ -715,10 +737,8 @@
     </div>
 
     <script src="./libs/swiper-bundle.min.js"></script>
-    <script src="./js/script.js" type="module"></script>
-    <script src="./js/category.js"></script>
-    <script src="./js/reviews.js" type="module"></script>
-    <script src="./js/scrollup.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+
+    <script src="./js/main.js"></script>
   </body>
 </html>
