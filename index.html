@@ -4,6 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Rhythm</title>
+    <meta
+      name="description"
+      content="Обирайте високоякісні брендові гітари в онлайн-магазині Rhythm. Понад 50 000 моделей у каталозі. Знайдіть свій ідеальний звук прямо зараз!"
+    />
     <!--Favicon-->
     <link rel="shortcut icon" href="./images/favicon.svg" />
     <!--Swiper-->
@@ -85,10 +89,34 @@
           </div>
           <div class="main__decor">
             <div class="main__image">
+              <picture>
+                <source
+                  srcset="
+                    ./images/hero/hero-img.avif    1x,
+                    ./images/hero/hero-img@2x.avif 2x
+                  "
+                  type="image/avif"
+                  media="(max-width: 1230px)"
+                />
+                <source
+                  srcset="
+                    ./images/hero/hero-img.webp    1x,
+                    ./images/hero/hero-img@2x.webp 2x
+                  "
+                  type="image/webp"
+                  media="(max-width: 1230px)"
+                />
+              </picture>
               <img
                 class="hero__image"
-                src="./images/hero/hero-img.webp"
+                srcset="
+                  ./images/hero/hero-img.jpg    1x,
+                  ./images/hero/hero-img@2x.jpg 2x
+                "
+                src="./images/hero/hero-img.jpg"
                 alt="Guitar"
+                width="602"
+                height="525"
                 fetchpriority="high"
               />
             </div>
@@ -477,21 +505,35 @@
                   </div>
                   <div class="reviews__image">
                     <picture>
+                      <picture>
+                        <source
+                          srcset="
+                            ./images/reviews/Ryan-Wels-1x.avif 1x,
+                            ./images/reviews/Ryan-Wels-2x.avif 2x
+                          "
+                          type="image/avif"
+                          media="(min-width: 320px)"
+                        />
+                      </picture>
                       <source
                         srcset="
                           ./images/reviews/Ryan-Wels-1x.webp 1x,
                           ./images/reviews/Ryan-Wels-2x.webp 2x
                         "
+                        type="image/webp"
                         media="(min-width: 320px)"
                       />
                       <img
                         srcset="
-                          ./images/reviews/Ryan1x.jpg 1x,
-                          ./images/reviews/Ryan2x.jpg 2x
+                          ./images/reviews/Ryan-Wels-1x.jpg 1x,
+                          ./images/reviews/Ryan-Wels-2x.jpg 2x
                         "
-                        src="./images/reviews/Ryanpng.png"
+                        src="./images/reviews/Ryan-Wels-1x.jpg"
                         alt="Ryan Wels"
                         class="reviews-img"
+                        width="508"
+                        height="531"
+                        loading="lazy"
                       />
                     </picture>
                   </div>
@@ -513,19 +555,31 @@
                     <picture>
                       <source
                         srcset="
+                          ./images/reviews/Amanda-Beil-1x.avif 1x,
+                          ./images/reviews/Amanda-Beil-2x.avif 2x
+                        "
+                        type="image/avif"
+                        media="(min-width: 320px)"
+                      />
+                      <source
+                        srcset="
                           ./images/reviews/Amanda-Beil-1x.webp 1x,
                           ./images/reviews/Amanda-Beil-2x.webp 2x
                         "
+                        type="image/webp"
                         media="(min-width: 320px)"
                       />
                       <img
                         srcset="
-                          ./images/reviews/Amanda1x.jpg 1x,
-                          ./images/reviews/Amanda2x.jpg 2x
+                          ./images/reviews/Amanda-Beil-1x.jpg 1x,
+                          ./images/reviews/Amanda-Beil-2x.jpg 2x
                         "
-                        src="./images/reviews/Amandapng.png"
-                        alt="Ryan Wels"
+                        src="./images/reviews/Amanda-Beil-1x.jpg"
+                        alt="Amanda Beil"
                         class="reviews-img"
+                        width="508"
+                        height="531"
+                        loading="lazy"
                       />
                     </picture>
                   </div>
@@ -547,19 +601,31 @@
                     <picture>
                       <source
                         srcset="
+                          ./images/reviews/Steve-Vai-1x.avif 1x,
+                          ./images/reviews/Steve-Vai-2x.avif 2x
+                        "
+                        type="image/avif"
+                        media="(min-width: 320px)"
+                      />
+                      <source
+                        srcset="
                           ./images/reviews/Steve-Vai-1x.webp 1x,
                           ./images/reviews/Steve-Vai-2x.webp 2x
                         "
+                        type="image/webp"
                         media="(min-width: 320px)"
                       />
                       <img
                         srcset="
-                          ./images/reviews/Steve-1x.jpg 1x,
-                          ./images/reviews/Steve-2x.jpg 2x
+                          ./images/reviews/Steve-Vai-1x.jpg 1x,
+                          ./images/reviews/Steve-Vai-2x.jpg 2x
                         "
-                        src="./images/reviews/Steve-Vaipng.png"
+                        src="./images/reviews/Steve-Vai-1x.jpg"
                         alt="Ryan Wels"
                         class="reviews-img"
+                        width="508"
+                        height="531"
+                        loading="lazy"
                       />
                     </picture>
                   </div>
@@ -697,6 +763,7 @@
                   class="social__link"
                   href="https://www.facebook.com/"
                   target="_blank"
+                  aria-label="Посилання на сторінку facebook"
                 >
                   <svg class="social__icon" width="32" height="32">
                     <use href="./images/icons.svg#icon-Facebook"></use>
@@ -704,7 +771,12 @@
                 </a>
               </li>
               <li>
-                <a class="social__link" href="https://x.com/" target="_blank">
+                <a
+                  class="social__link"
+                  href="https://x.com/"
+                  target="_blank"
+                  aria-label="Посилання на сторінку x"
+                >
                   <svg class="social__icon" width="32" height="32">
                     <use href="./images/icons.svg#icon-x"></use>
                   </svg>
@@ -715,6 +787,7 @@
                   class="social__link"
                   href="https://www.instagram.com/"
                   target="_blank"
+                  aria-label="Посилання на сторінку instagram"
                 >
                   <svg class="social__icon" width="32" height="32">
                     <use href="./images/icons.svg#icon-Instagram"></use>

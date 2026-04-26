@@ -488,11 +488,15 @@ input {
 
 .hero__image {
   display: block;
-  margin: 30px auto 0;
+  width: 100%;
+  height: auto;
   max-width: 290px;
+  margin: 30px auto 0;
+  border-radius: 0 0 151px 270px;
 }
 @media (min-width: 768px) {
   .hero__image {
+    max-width: 420px;
     margin: 0;
   }
 }
@@ -503,7 +507,7 @@ input {
 }
 @media (min-width: 968px) {
   .hero__image {
-    max-width: 520px;
+    max-width: 507px;
   }
 }
 @media (min-width: 1200px) {
@@ -854,7 +858,11 @@ input {
 }
 .reviews-img {
   display: block;
-  width: 290px;
+  width: 100%;
+  max-width: 508px;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
   position: relative;
   z-index: 1;
   margin: 0 auto;

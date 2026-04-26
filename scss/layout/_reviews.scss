@@ -74,7 +74,10 @@
 
 .reviews-img {
   display: block;
-  width: 290px;
+  width: 100%;
+  max-width: 508px;
+  height: auto; 
+  object-fit: cover;
   position: relative;
   z-index: 1;
   margin: 0 auto;
