@@ -14,6 +14,12 @@
     <link rel="stylesheet" href="./libs/swiper-bundle.min.css" />
     <!--Styles-->
     <link rel="stylesheet" href="./css/main.min.css" />
+    <link
+      rel="preload"
+      as="image"
+      href="./images/hero/hero-img.jpg"
+      fetchpriority="high"
+    />
   </head>
   <body>
     <!--Header-->
@@ -96,7 +102,6 @@
                     ./images/hero/hero-img@2x.avif 2x
                   "
                   type="image/avif"
-                  media="(max-width: 1230px)"
                 />
                 <source
                   srcset="
@@ -104,15 +109,15 @@
                     ./images/hero/hero-img@2x.webp 2x
                   "
                   type="image/webp"
-                  media="(max-width: 1230px)"
                 />
               </picture>
               <img
                 class="hero__image"
                 srcset="
-                  ./images/hero/hero-img.jpg    1x,
-                  ./images/hero/hero-img@2x.jpg 2x
+                  ./images/hero/hero-img.jpg     602w,
+                  ./images/hero/hero-img@2x.jpg 1204w
                 "
+                sizes="(min-width: 1200px) 602px, (min-width: 968px) 507px, (min-width: 768px) 420px, 290px"
                 src="./images/hero/hero-img.jpg"
                 alt="Guitar"
                 width="602"
@@ -270,64 +275,82 @@
             <div class="category__swiper-wrapper swiper-wrapper">
               <!--Slide #1-->
               <div class="swiper-slide category__swiper-slide">
-                <img
-                  class="category__img"
-                  srcset="
-                    ./images/category/acoustic-220.webp 220w,
-                    ./images/category/acoustic-440.webp 440w
-                  "
-                  sizes="(min-width: 320px) 220px"
-                  alt="acoustic category"
-                  src="./images/category/acoustic.jpg"
-                />
-                <p class="category__name">Acoustic</p>
+                <div class="category__thumb">
+                  <img
+                    class="category__img"
+                    srcset="
+                      ./images/category/acoustic-220.webp 1x,
+                      ./images/category/acoustic-440.webp 2x
+                    "
+                    alt="acoustic category"
+                    src="./images/category/acoustic.jpg"
+                    width="220"
+                    height="280"
+                    loading="lazy"
+                  />
+                  <p class="category__name">Acoustic</p>
+                </div>
               </div>
 
               <!--Slide #2-->
               <div class="swiper-slide category__swiper-slide">
-                <img
-                  class="category__img"
-                  srcset="
-                    ./images/category/electric-220.webp 220w,
-                    ./images/category/electric-440.webp 440w
-                  "
-                  sizes="(min-width: 320px) 220px"
-                  alt="electric category"
-                  src="./images/category/electric.jpg"
-                />
-                <p class="category__name">Electric</p>
+                <div class="category__thumb">
+                  <img
+                    class="category__img"
+                    srcset="
+                      ./images/category/electric-220.webp 220w,
+                      ./images/category/electric-440.webp 440w
+                    "
+                    sizes="(min-width: 320px) 220px"
+                    alt="electric category"
+                    src="./images/category/electric.jpg"
+                    width="220"
+                    height="280"
+                    loading="lazy"
+                  />
+                  <p class="category__name">Electric</p>
+                </div>
               </div>
 
               <!--Slide #3-->
               <div class="swiper-slide category__swiper-slide">
-                <img
-                  class="category__img"
-                  srcset="
-                    ./images/category/basses-220.webp 220w,
-                    ./images/category/basses-440.webp 440w
-                  "
-                  sizes="(min-width: 320px) 220px"
-                  alt="Bass category"
-                  src="./images/category/basses.jpg"
-                />
-                <p class="category__name">Basses</p>
+                <div class="category__thumb">
+                  <img
+                    class="category__img"
+                    srcset="
+                      ./images/category/basses-220.webp 220w,
+                      ./images/category/basses-440.webp 440w
+                    "
+                    sizes="(min-width: 320px) 220px"
+                    alt="Bass category"
+                    src="./images/category/basses.jpg"
+                    width="220"
+                    height="280"
+                    loading="lazy"
+                  />
+                  <p class="category__name">Basses</p>
+                </div>
               </div>
-              <!--Slide #3-->
+              <!--Slide #4-->
               <div class="swiper-slide category__swiper-slide">
-                <img
-                  class="category__img"
-                  srcset="
-                    ./images/category/collections-220.webp 220w,
-                    ./images/category/collections-440.webp 440w
-                  "
-                  sizes="(min-width: 320px) 220px"
-                  alt="Collections category"
-                  src="./images/category/collections.jpg"
-                />
-                <p class="category__name">Collections</p>
+                <div class="category__thumb">
+                  <img
+                    class="category__img"
+                    srcset="
+                      ./images/category/collections-220.webp 220w,
+                      ./images/category/collections-440.webp 440w
+                    "
+                    sizes="(min-width: 320px) 220px"
+                    alt="Collections category"
+                    src="./images/category/collections.jpg"
+                    width="220"
+                    height="280"
+                    loading="lazy"
+                  />
+                  <p class="category__name">Collections</p>
+                </div>
               </div>
             </div>
-
             <!-- If we need scrollbar -->
             <div class="swiper-scrollbar"></div>
           </div>
@@ -656,16 +679,20 @@
                   ./images/buy/first-image-guitars-1x.webp 1x,
                   ./images/buy/first-image-guitars-2x.webp 2x
                 "
+                type="image/webp"
                 media="(min-width: 320px)"
               />
               <img
+                class="buy__img"
                 srcset="
                   ./images/buy/first-image-guitars-1x.jpg 1x,
                   ./images/buy/first-image-guitars-2x.jpg 2x
                 "
-                src="./images/buy/first-guitarpng.png"
+                src="./images/buy/first-image-guitars-1x.jpg"
                 alt="guitars"
-                class="buy__img"
+                width="212"
+                height="461"
+                loading="lazy"
               />
             </picture>
             <picture>
@@ -674,6 +701,7 @@
                   ./images/buy/second-image-guitars-1x.webp 1x,
                   ./images/buy/second-image-guitars-2x.webp 2x
                 "
+                type="image/webp"
                 media="(min-width: 320px)"
               />
               <img
