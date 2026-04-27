@@ -27,6 +27,10 @@
 
 .reviews__description {
   position: relative;
+
+  @media (min-width: 768px) {
+    width: 50%;
+  }
 }
 
 .reviews__text {
@@ -67,7 +71,7 @@
     border-radius: 40px 0 400px 400px;
     background: $colorTitleOrange;
     transform: rotate(-8deg);
-    background-image: url("../../images/reviews/reviews-decor.png");
+    background-image: url("../images/reviews/reviews-decor.png");
     background-repeat: no-repeat;
   }
 }

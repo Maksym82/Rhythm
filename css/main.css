@@ -827,6 +827,11 @@ input {
 .reviews__description {
   position: relative;
 }
+@media (min-width: 768px) {
+  .reviews__description {
+    width: 50%;
+  }
+}
 
 .reviews__text {
   font-size: 24px;
@@ -868,7 +873,7 @@ input {
     background: #ff6428;
     -webkit-transform: rotate(-8deg);
             transform: rotate(-8deg);
-    background-image: url("../../images/reviews/reviews-decor.png");
+    background-image: url("../images/reviews/reviews-decor.png");
     background-repeat: no-repeat;
   }
 }
