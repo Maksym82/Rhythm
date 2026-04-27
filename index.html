@@ -98,32 +98,34 @@
               <picture>
                 <source
                   srcset="
-                    ./images/hero/hero-img.avif    1x,
-                    ./images/hero/hero-img@2x.avif 2x
+                    ./images/hero/hero-img.avif    602w,
+                    ./images/hero/hero-img@2x.avif 1204w
                   "
                   type="image/avif"
+                  sizes="(min-width: 1200px) 602px, (min-width: 968px) 507px, (min-width: 768px) 420px, 290px"
                 />
                 <source
                   srcset="
-                    ./images/hero/hero-img.webp    1x,
-                    ./images/hero/hero-img@2x.webp 2x
+                    ./images/hero/hero-img.webp    602w,
+                    ./images/hero/hero-img@2x.webp 1204w
                   "
                   type="image/webp"
+                  sizes="(min-width: 1200px) 602px, (min-width: 968px) 507px, (min-width: 768px) 420px, 290px"
+                />
+                <img
+                  class="hero__image"
+                  srcset="
+                    ./images/hero/hero-img.jpg     602w,
+                    ./images/hero/hero-img@2x.jpg 1204w
+                  "
+                  sizes="(min-width: 1200px) 602px, (min-width: 968px) 507px, (min-width: 768px) 420px, 290px"
+                  src="./images/hero/hero-img.jpg"
+                  alt="Guitar"
+                  width="602"
+                  height="525"
+                  fetchpriority="high"
                 />
               </picture>
-              <img
-                class="hero__image"
-                srcset="
-                  ./images/hero/hero-img.jpg     602w,
-                  ./images/hero/hero-img@2x.jpg 1204w
-                "
-                sizes="(min-width: 1200px) 602px, (min-width: 968px) 507px, (min-width: 768px) 420px, 290px"
-                src="./images/hero/hero-img.jpg"
-                alt="Guitar"
-                width="602"
-                height="525"
-                fetchpriority="high"
-              />
             </div>
           </div>
         </div>
@@ -528,16 +530,14 @@
                   </div>
                   <div class="reviews__image">
                     <picture>
-                      <picture>
-                        <source
-                          srcset="
-                            ./images/reviews/Ryan-Wels-1x.avif 1x,
-                            ./images/reviews/Ryan-Wels-2x.avif 2x
-                          "
-                          type="image/avif"
-                          media="(min-width: 320px)"
-                        />
-                      </picture>
+                      <source
+                        srcset="
+                          ./images/reviews/Ryan-Wels-1x.avif 1x,
+                          ./images/reviews/Ryan-Wels-2x.avif 2x
+                        "
+                        type="image/avif"
+                        media="(min-width: 320px)"
+                      />
                       <source
                         srcset="
                           ./images/reviews/Ryan-Wels-1x.webp 1x,
