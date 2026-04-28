@@ -608,7 +608,7 @@ input {
 .category__img {
   display: block;
   width: 100%;
-  height: 100%;
+  height: auto;
   -o-object-fit: cover;
      object-fit: cover;
   -webkit-transition: -webkit-transform 0.3s linear;
@@ -873,8 +873,6 @@ input {
     background: #ff6428;
     -webkit-transform: rotate(-8deg);
             transform: rotate(-8deg);
-    background-image: url("../images/reviews/reviews-decor.png");
-    background-repeat: no-repeat;
   }
 }
 .reviews-img {
@@ -1027,6 +1025,11 @@ input {
   .buy__image-box {
     gap: 33px;
   }
+}
+
+.buy__image-box picture {
+  display: block;
+  max-width: 212px;
 }
 
 .buy__img {
